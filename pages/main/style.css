@@ -5,6 +5,8 @@
   --color-light-x1: #fff;
   --color-light-s: #fafafa;
   --color-dark-s: #cdcdcd;
+  --color-dark-l: #545454;
+  --color-dark-xl: #4c4c4c;
   --color-dark-3xl: #292929;
 }
 
@@ -180,3 +182,34 @@ header
 }
 
 /* ---------------------------------------------- */
+
+/* About Section */
+.about {
+  margin: 80px 40px 100px 40px;
+  padding: 0 175px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .about_image {
+  margin-right: 120px;
+}
+
+.about .about_right h3 {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+}
+
+.about .about_right .about_right_subheading {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--color-dark-xl);
+  margin-top: 25px;
+}
