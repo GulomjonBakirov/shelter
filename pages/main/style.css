@@ -9,6 +9,7 @@
   --color-dark-l: #545454;
   --color-dark-xl: #4c4c4c;
   --color-dark-3xl: #292929;
+  --color-dark-m: #b2b2b2;
 }
 
 /*General styles*/
@@ -234,7 +235,6 @@ header
 .help {
   padding: 80px 40px 100px 40px;
   text-align: center;
-  background-color: var(--color-light-x1);
 }
 .help_top {
   font-family: "Georgia";
@@ -276,4 +276,81 @@ header
   line-height: 23px;
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
+}
+
+/* --------------------------------------------- */
+
+/* Donation Section */
+.donation {
+  padding: 80px 182px 100px 182px;
+  background-color: var(--color-light-l);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donation .left {
+  margin-right: 30px;
+  min-width: 505px;
+}
+/* .donation .left .donation_image {
+  width: 505px;
+} */
+
+.donation .right {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.donation .right .heading {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  letter-spacing: 0.06em;
+  line-height: 45px;
+  color: var(--color-dark-l);
+  margin-bottom: 20px;
+}
+
+.donation .right .subheading {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  line-height: 17px;
+  color: var(--color-dark-l);
+  margin-bottom: 20px;
+}
+
+.donation .right .credit_card {
+  padding: 10px 15px;
+  background-color: var(--color-primary);
+  border-radius: 9px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donation .right .credit_card .credit_card_image {
+  margin-right: 15px;
+}
+
+.donation .right .credit_card .card_number {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 20px;
+
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+}
+
+.donation_info {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-dark-m);
 }
