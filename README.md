@@ -1,1 +1,1 @@
-# https://gulomjonbakirov.github.io/shelter/
+# https://gulomjonbakirov.github.io/shelter/pages/main/index.html
