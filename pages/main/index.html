@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shelter</title>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- <link rel="stylesheet" href="../../assets/css/normalize.css" /> -->
     <link rel="stylesheet" href="../../assets/css/fonts.css" />
     <link rel="stylesheet" href="./style.css" />
@@ -25,13 +32,13 @@
                 >
               </li>
               <li class="navigation_bar_item">
-                <a href="#" class="navigation_bar_link">Our pets</a>
+                <a href="../pets/index.html" target="_blank" class="navigation_bar_link">Our pets</a>
               </li>
               <li class="navigation_bar_item">
-                <a href="#" class="navigation_bar_link">Help the shelter</a>
+                <a href="#help" class="navigation_bar_link">Help the shelter</a>
               </li>
               <li class="navigation_bar_item">
-                <a href="#" class="navigation_bar_link">Contacts</a>
+                <a href="#footer" class="navigation_bar_link">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -86,21 +93,48 @@
             </p>
           </div>
         </section>
-        <section id="pets" class="pets">
-          <h3 class="pets_top">Our friends who are looking for a house</h3>
-          <div class="pets_slider">
+    
+         <section id="pets" class="pets">
+        <div class="container">
+          <h3 class="pets__heading">
+            Our friends who <br />
+            are looking for a house
+          </h3>
+          <div class="pets__slider">
+            <button class="btn-round pets__slider-btnLeft">
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
             <div class="card">
-              <img
-                src="../../assets/images/pets-katrine.png"
-                alt="katrine cat"
-                class="card_image"
-              />
-              <h4 class="card_text">Katrine</h4>
-              <button class="card_button" type="button">Learn More</button>
+              <div class="card-img">
+                <img src="../../assets/images/pets-katrine.png" alt="cat image" />
+              </div>
+              <p class="card-title">Katrine</p>
+              <button class="btn-outline card-btn">Learn more</button>
             </div>
+            <div class="card mx">
+              <div class="card-img">
+                <img src="../../assets/images/pets-jennifer.png" alt="puppy image" />
+              </div>
+              <p class="card-title">Jennifer</p>
+              <button class="btn-outline card-btn">Learn more</button>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="../../assets/images/pets-woody.png" alt="dog image" />
+              </div>
+              <p class="card-title">Woody</p>
+              <button class="btn-outline card-btn">Learn more</button>
+            </div>
+            <button class="btn-round pets__slider-btnRight">
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
           </div>
-          <button class="pets_button">Get to know the rest</button>
-        </section>
+          <a href="../pets/index.html" target="_blank" class="btn pets__btn">
+            Get to know the rest
+          </a>
+        </div>
+      </section>
+
         <section id="help" class="help">
           <h3 class="help_top">How you can help our shelter</h3>
           <ul class="help_list">
@@ -166,7 +200,96 @@
             </li>
           </ul>
         </section>
+        <section id="donation" class="donation">
+            <div class="left">
+              <img src="../../assets/images/donation-dog.png" alt="donation dog" class="donation_image">
+            </div>
+            <div class="right">
+              <h3 class="heading">
+                You can also make a donation
+              </h3>
+              <h5 class="subheading">
+                Name of the bank / Type of bank account
+              </h5>
+              <div class="credit_card">
+                <img src="../../assets/icons/credit-card.svg" alt="credit card" class="credit_card_image">
+                <h4 class="card_number">
+                  8380 2880 8028 8791 7435
+                </h4>
+
+              </div>
+              <p class="donation_info">
+                Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              </p>
+            </div>
+         
+        </section>
       </main>
+
+      <footer id="footer" class="footer">
+          <div class="contacts">
+            <h3 class="title">For questions and suggestions</h3>
+            <div class="mail">
+              <img src="../../assets/icons/icon-email.svg" alt="email icon">
+              <h4 class="text">email@shelter.com</h4>
+            </div>
+            <div class="phone">
+              <img src="../../assets/icons/icon-phone.svg" alt="phone icon">
+              <h4 class="text">+13 674 567 75 54</h4>
+            </div>
+          </div>
+          <div class="locations">
+            <h3 class="title">
+              We are waiting for your visit
+            </h3>
+            <div class="location">
+              <img src="../../assets/icons/icon-marker.svg" alt="marker icon">
+              <h3 class="text">
+1 Central Street, Boston (entrance from the store)
+              </h3>
+            </div>
+             <div class="location">
+              <img src="../../assets/icons/icon-marker.svg" alt="marker icon">
+              <h3 class="text">
+18 South Park, London 
+              </h3>
+            </div>
+          </div>
+          <img src="../../assets/images/footer-puppy.png" alt="footer dog image" class="footer_image" width="300" >
+         
+      </footer>
     </div>
+    <div class="modal hide">
+      <div class="modal__backdrop"></div>
+      <div class="modal__window">
+        <button class="btn-round modal__close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal__image">
+          <img src="../../assets/images/pets-katrine.png" alt="cat image" />
+        </div>
+        <div class="modal__content">
+          <h3 class="modal__heading">Sample heading</h3>
+          <h4 class="modal__subheading">Sample subheading</h4>
+          <h5 class="modal__text">Sample text</h5>
+          <ul class="modal__list">
+            <li class="modal__list-item">
+              <strong>Age:</strong> <span class="pet-age"></span>
+            </li>
+            <li class="modal__list-item">
+              <strong>Inoculations:</strong>
+              <span class="pet-inoculations"></span>
+            </li>
+            <li class="modal__list-item">
+              <strong>Diseases:</strong> <span class="pet-diseases"></span>
+            </li>
+            <li class="modal__list-item">
+              <strong>Parasites:</strong> <span class="pet-parasites"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
