@@ -142,7 +142,7 @@ sliderItems.forEach((sliderItem, index) => {
 });
 
 sliderBtnLeft.addEventListener("click", () => {
-  const x = sliderStart - 3;
+  const x = sliderStart - 1;
   if (x < 0) {
     sliderStart = petsData.length + x;
   } else {
@@ -152,7 +152,7 @@ sliderBtnLeft.addEventListener("click", () => {
 });
 
 sliderBtnRight.addEventListener("click", () => {
-  sliderStart += 3;
+  sliderStart += 1;
   changeSlider();
 });
 
